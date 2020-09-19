@@ -2,10 +2,177 @@
 <html>
     <head>
         <style>
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            nav {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                justify-content: space-between;
 
+                display: flex;
+            }
+
+            nav div {
+                display: flex;
+                flex-direction: row;
+                width: 50%
+            }
+
+            nav p {
+                margin: 18px;
+                font-size: 12px;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: black;
+            }
+
+            #nav-left {
+
+            }
+
+            #nav-right {
+                justify-content: end;
+            }
+
+            #footer-right {
+
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                justify-content: space-between;
+                align-content: center;
+
+                background-color: #f2f2f2;
+                display: flex;
+                padding: 8px;
+
+            }
+
+            footer div {
+                display: flex;
+                width: 50%;
+
+                align-content: center;
+            }
+
+            footer p {
+                margin: 0 16px;
+                font-size: 14px;
+            }
+
+            footer a {
+                text-decoration: none;
+                color: gray;
+            }
+
+            #footer-right {
+                justify-content: end;
+            }
+
+            main {
+                width: 100%;
+            }
+
+            #logo {
+                padding-top: 160px;
+            }
+
+            main div {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            #search-div {
+                width: 40%;
+                margin: auto;
+                margin-top: 24px;
+                padding: 6px;
+
+                border-radius: 25px;
+                border: 1px solid #d5e1ef;
+                height: 38px;
+                
+                align-content: center;
+                justify-content: start;
+            }
+
+            #search-div img {
+                max-height: 60%;
+                width: 18px;
+                margin: auto;
+            }
+
+            #search-div input {
+                width: 90%;
+                border-radius: 5%;
+                height: 32px;
+
+                border: none;
+                align-content: end;
+            }
+
+            #submit-div {
+                width: 20%;
+                margin: auto;
+                margin-top: 32px;
+                
+            }
+
+            #submit-div button {
+                background-color: #f2f2f2;
+                border-radius: 5px;
+                border: none;
+                color: #d5e1ef
+                font-size: 18px;
+                padding: 8px;
+            }
         </style>
     </head>
     <body>
+        <nav>
+            <div id="nav-left">
+                <p><a href="#">About</a></p>
+                <p><a href="#">Store</a></p>
+            </div>
+            <div id="nav-right">
+                <p><a href="#">Gmail</a></p>
+                <p><a href="#">Images</a></p>
 
+            </div>
+        </nav>
+        <main>
+            <div id="logo-div">
+                <img src="logo.png" id="logo">
+            </div>
+            <div id="search-div">
+                <img src="search-icon.png">
+                <input type="text">
+            </div>
+            <div id="submit-div">
+                <button type="submit">Google Search</button>
+                <button type="submit">I'm Feeling Lucky</button>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-left">
+                <p><a href="#">Advertising</a></p>
+                <p><a href="#">Business</a></p>
+                <p><a href="#">How Search Works</a></p>
+            </div>
+            <div id="footer-right">
+                <p><a href="#">Privacy</a></p>
+                <p><a href="#">Terms</a></p>
+                <p><a href="#">Settings</a></p>
+            </div>
+        </footer>
     </body>
 </html>
